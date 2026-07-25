@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Pensamos — ELUZA</title>
+  <meta name="description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Cada opção pode estar certa. A viagem ainda pode estar errada.">
+  <meta property="og:description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <link rel="stylesheet" href="../eluza-global.css">
+  <style>
+    .skip-link { position: absolute; left: -9999px; top: 0; background: var(--elz-black); color: var(--elz-white); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); z-index: 200; }
+    .skip-link:focus { left: var(--space-4); top: var(--space-4); }
+    .elz-header__nav a[aria-current="page"] { color: var(--color-text-primary); font-weight: var(--weight-medium); }
+    .site-footer__group-title { font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--elz-dull); margin-bottom: var(--space-3); }
+    .site-footer__links a { display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0; }
+    .site-footer__links a:hover { color: var(--elz-white); }
+    .lens-list { counter-reset: lens; list-style: none; margin-top: var(--space-6); }
+    .lens-list li { display: flex; gap: var(--space-4); padding: var(--space-4) 0; border-top: 1px solid var(--color-border); font-size: var(--text-lg); line-height: var(--leading-xl); color: var(--color-text-secondary); }
+    .lens-list li::before { counter-increment: lens; content: counter(lens, decimal-leading-zero); font-size: var(--text-sm); font-weight: var(--weight-medium); color: var(--color-text-muted); margin-top: 4px; }
+    .lens-list strong { color: var(--color-text-primary); font-weight: var(--weight-medium); }
+  </style>
+</head>
+<body style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-surface);">
+
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header class="elz-header">
+    <div class="elz-header__inner container">
+      <a href="index.html" aria-label="ELUZA — página inicial">
+        <div class="elz-header__logo">ELUZA</div>
+        <div class="elz-header__tagline">Private Travel Design Studio</div>
+      </a>
+      <nav class="elz-header__nav" aria-label="Navegação principal">
+        <a href="how-we-think.html" aria-current="page">Como Pensamos</a>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="case-studies.html">Estudos de Caso</a>
+        <a href="before-you-book.html">Antes de Reservar</a>
+        <a href="about.html">Sobre</a>
+        <a href="get-started.html" class="btn btn--dark btn--sm">Comece Aqui</a>
+        <a href="../how-we-think.html" aria-label="Mudar idioma" lang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- HWT-01 — Hero -->
+  <section class="hero">
+    <div class="container container-narrow">
+      <div class="hero__eyebrow">Você já fez a pesquisa.</div>
+      <h1 class="hero__title font-serif">Cada opção pode estar certa. A viagem ainda pode estar errada.</h1>
+      <p class="hero__sub" style="max-width: var(--max-width-lg);">Você já tem boas opções. Falta a estrutura que define quais podem fazer parte da mesma viagem, em que ordem e o que cada escolha exige das demais.</p>
+    </div>
+  </section>
+
+  <!-- HWT-02 — O paradoxo da abundância -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">O paradoxo da abundância</div>
+      <h2 class="heading-lg font-serif mt-3">Quanto mais você pesquisa, mais difícil fica decidir.</h2>
+      <p class="body-lg mt-4">Cada aba, mapa, avaliação e recomendação acrescenta outra opção que parece merecer atenção. É para isso que a pesquisa serve — e ela funciona. Mas nenhuma dessas fontes decide quais opções cabem na mesma viagem ou o que muda nas outras quando você se compromete com uma delas. A lista continua crescendo, e a decisão fica mais pesada. Em algum momento, o problema deixa de ser o que encontrar e passa a ser o que manter.</p>
+    </div>
+  </section>
+
+  <!-- HWT-03 — Pesquisa não é design (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-xl font-serif">Pesquisa não é design.</h2>
+      <p class="mt-4" style="font-size: var(--text-lg); color: var(--elz-kingly);">São trabalhos diferentes. É no segundo que a viagem começa a ser decidida como um todo.</p>
+      <p class="body-lg mt-6">A inspiração desperta vontade. A pesquisa encontra opções. A seleção reduz a lista. O planejamento organiza a logística. Todas essas etapas podem envolver critério e todas têm seu papel.</p>
+      <p class="body-lg mt-4">O design começa quando uma decisão precisa orientar outra. Quando a base depende da rota e a rota depende do ritmo, já não basta reunir boas escolhas. É preciso definir quais decisões vêm primeiro e como afetam as demais. É aí que o trabalho da ELUZA começa.</p>
+      <p class="body-lg mt-4">A pesquisa amplia as possibilidades. O design define o que faz parte, em que sequência e com quais consequências. Reservas e execução vêm depois, para colocar em prática decisões que já foram tomadas. Muitas pessoas ouvem que precisam pesquisar mais. O que geralmente falta é a estrutura que faz todas as escolhas se sustentarem juntas.</p>
+    </div>
+  </section>
+
+  <!-- HWT-04 — A viagem como sequência -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">A viagem como sequência</div>
+      <h2 class="heading-lg font-serif mt-3">Uma viagem é uma sequência, não uma coleção.</h2>
+      <p class="body-lg mt-2" style="color: var(--color-text-tertiary);">A posição de uma escolha muda o valor que ela tem para a viagem.</p>
+      <p class="body-lg mt-4">Um hotel que você adora pode se transformar em restrição quando é reservado no lugar errado: passa a definir transportes, bate-e-volta e até onde a segunda base precisa ficar. Uma cidade perde profundidade quando entra no momento errado ou encontra o viajante com a energia errada. Dois destinos excelentes podem não funcionar juntos porque a transição entre eles custa mais do que o mapa mostra.</p>
+      <p class="body-lg mt-4">Rota, duração, bases, transições, energia e recuperação não são detalhes. São o que determina o valor de cada escolha. Quando as partes são avaliadas separadamente, todas podem parecer boas. Quando são vistas em sequência, fica claro quais trabalham contra as outras.</p>
+    </div>
+  </section>
+
+  <!-- HWT-05 — Como lemos uma viagem -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Como lemos uma viagem.</h2>
+      <p class="body-lg mt-2" style="color: var(--color-text-tertiary);">Seis perguntas que fazemos antes de qualquer reserva.</p>
+      <ol class="lens-list">
+        <li><span><strong>Leitura:</strong> o que esta viagem está realmente pedindo?</span></li>
+        <li><span><strong>Estrutura:</strong> que forma consegue sustentá-la?</span></li>
+        <li><span><strong>Sequência:</strong> em que ordem as etapas devem acontecer?</span></li>
+        <li><span><strong>Ritmo:</strong> onde a viagem pede intensidade e onde precisa de recuperação?</span></li>
+        <li><span><strong>Omissão:</strong> o que precisa sair para que o restante funcione?</span></li>
+        <li><span><strong>Compromisso:</strong> o que precisa ser decidido primeiro?</span></li>
+      </ol>
+      <p class="mt-6" style="font-size: var(--text-md); color: var(--color-text-muted);">Cada viagem responde a essas perguntas de um jeito diferente. Esse é justamente o ponto.</p>
+    </div>
+  </section>
+
+  <!-- HWT-06 — Critério aplicado -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Critério aplicado</div>
+      <h2 class="heading-lg font-serif mt-3">Como isso aparece em uma viagem real.</h2>
+      <p class="body-lg mt-2" style="color: var(--color-text-tertiary);">Três decisões que a maioria dos viajantes não pensaria em questionar.</p>
+
+      <div class="grid grid-3 mt-8" style="gap: var(--space-4);">
+        <div class="card">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-4);">Tóquio, no fim</h3>
+          <p class="label mb-2">Instinto inicial</p>
+          <p class="body-md">Começar por Tóquio, a principal porta de entrada e a etapa mais intensa da viagem.</p>
+          <p class="label mt-3 mb-2">Decisão ELUZA</p>
+          <p class="body-md">Inverter a lógica e construir a viagem até Tóquio: Kanazawa, depois Quioto, Hakone e, por fim, Tóquio.</p>
+          <p class="label mt-3 mb-2">Por quê</p>
+          <p class="body-md">Tóquio exige muito do viajante. Quioto oferece uma entrada mais suave, e Hakone reduz o ritmo e cria contraste. Quando Tóquio chega, o viajante já teve tempo de entrar na viagem e pode viver sua intensidade como culminação.</p>
+          <p class="label mt-3 mb-2">O que isso protegeu</p>
+          <p class="body-md">A energia da chegada, a profundidade de Quioto e a capacidade de Tóquio funcionar como ponto alto — não como choque inicial.</p>
+        </div>
+        <div class="card">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-4);">Cinco bases, reduzidas a três</h3>
+          <p class="label mb-2">Instinto inicial</p>
+          <p class="body-md">Distribuir doze dias entre Roma, Florença, Toscana, Veneza e Costa Amalfitana.</p>
+          <p class="label mt-3 mb-2">Decisão ELUZA</p>
+          <p class="body-md">Retirar duas bases, incluindo Veneza, e reconstruir a viagem ao redor de três.</p>
+          <p class="label mt-3 mb-2">Por quê</p>
+          <p class="body-md">O custo físico e logístico de cada mudança — check-out, malas, transfer, check-in e nova adaptação — cresce mais rápido do que o mapa sugere. Cada base adicional cria outro recomeço e retira tempo dos lugares que permanecem.</p>
+          <p class="label mt-3 mb-2">O que isso protegeu</p>
+          <p class="body-md">Tempo em cada lugar, estabilidade, profundidade e muito menos recomeços.</p>
+        </div>
+        <div class="card">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-4);">A villa, somente depois da rota</h3>
+          <p class="label mb-2">Instinto inicial</p>
+          <p class="body-md">Reservar uma villa atraente antes de resolver o restante da viagem.</p>
+          <p class="label mt-3 mb-2">Decisão ELUZA</p>
+          <p class="body-md">Esperar até que a rota e as bases estivessem confirmadas.</p>
+          <p class="label mt-3 mb-2">Por quê</p>
+          <p class="body-md">Uma villa na localização errada deixa de ser apenas uma hospedagem e se transforma em uma âncora. Passa a definir transportes, bate-e-volta e onde a outra base precisa ficar.</p>
+          <p class="label mt-3 mb-2">O que isso protegeu</p>
+          <p class="body-md">A liberdade de construir a rota primeiro, encontrar uma localização que realmente funcionasse e assumir os compromissos na ordem certa.</p>
+        </div>
+      </div>
+      <p class="body-lg mt-8" style="font-weight: var(--weight-medium); color: var(--color-text-primary);">Nenhuma dessas decisões veio de encontrar uma opção melhor. Vieram de definir o que fazia parte e em que ordem decidir.</p>
+    </div>
+  </section>
+
+  <!-- HWT-07 — Tecnologia a serviço da responsabilidade -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Tecnologia a serviço da responsabilidade</div>
+      <h2 class="heading-lg font-serif mt-3">Ferramentas ampliam as possibilidades. A responsabilidade pela direção continua sendo nossa.</h2>
+      <p class="body-lg mt-4">Usamos boas ferramentas e as usamos com seriedade. Um software pode pesquisar mais rápido, comparar opções, revelar informações relevantes e propor caminhos possíveis. Essa capacidade é real e amplia o que pode ser considerado.</p>
+      <p class="body-lg mt-4">Mas recomendar e decidir não são a mesma coisa. Compreender o contexto de uma viagem específica, definir prioridades, avaliar o custo de uma escolha para as outras e responder pela direção final exige critério profissional. A tecnologia amplia a capacidade; a ELUZA assume a decisão e a responsabilidade por ela.</p>
+    </div>
+  </section>
+
+  <!-- HWT-08 — Omissão como design -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Omissão como design</div>
+      <h2 class="heading-lg font-serif mt-3">O que fica de fora também faz parte do design.</h2>
+      <p class="body-lg mt-4">A maior parte do planejamento acrescenta: mais lugares, mais dias, mais coisas que parecem valer a pena. Depois de certo ponto, porém, é justamente o excesso que enfraquece a viagem — uma base adicional, um marco considerado obrigatório, uma quarta ilha que reduz a força das três que já funcionavam.</p>
+      <p class="body-lg mt-4">Retirar não é aceitar uma solução menor. Muitas vezes, é a decisão que protege tudo o que você escolheu manter.</p>
+    </div>
+  </section>
+
+  <!-- HWT-09 — Ponte para o Blueprint (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow eyebrow-light">Ponte para o Blueprint</div>
+      <h2 class="heading-xl font-serif mt-3">Onde o raciocínio se transforma em algo que você pode usar.</h2>
+      <p class="body-lg mt-6">Até aqui, mostramos como pensamos. No Blueprint, esse raciocínio ganha uma forma que você pode ler, consultar e usar.</p>
+      <p class="mt-4" style="font-size: var(--text-lg); color: var(--elz-white); font-weight: var(--weight-medium);">O Blueprint torna as decisões e a lógica por trás delas visíveis e prontas para orientar a ação.</p>
+    </div>
+  </section>
+
+  <!-- HWT-10 — Como funciona -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Como funciona.</h2>
+      <p class="body-lg mt-2" style="color: var(--color-text-tertiary);">Cinco etapas. Cada uma muda o que você consegue enxergar.</p>
+      <div class="mt-8">
+        <div class="diff-item">
+          <div class="diff-item__label">Etapa 01</div>
+          <div class="diff-item__title font-serif">Contexto</div>
+          <div class="diff-item__body">Entendemos para que a viagem existe e para quem. Você encontra palavras para o que realmente quer, não apenas uma lista de destinos.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__label">Etapa 02</div>
+          <div class="diff-item__title font-serif">Estrutura</div>
+          <div class="diff-item__body">Definimos a forma que sustenta a viagem: rota, bases, duração e ritmo. O conjunto fica visível antes de qualquer compromisso.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__label">Etapa 03</div>
+          <div class="diff-item__title font-serif">Critério</div>
+          <div class="diff-item__body">Decidimos o que permanece, o que sai, em que ordem as etapas acontecem e por quê. Fica claro o que cada escolha exige das demais.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__label">Etapa 04</div>
+          <div class="diff-item__title font-serif">Blueprint</div>
+          <div class="diff-item__body">O raciocínio se transforma em um documento: as decisões que dão forma à viagem e a lógica por trás delas, reunidas em um só lugar.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__label">Etapa 05</div>
+          <div class="diff-item__title font-serif">Ação</div>
+          <div class="diff-item__body">Com a estrutura definida, as próximas decisões ficam mais claras, mais fáceis de sustentar e podem ser tomadas na ordem certa. Você avança com direção, não com uma pilha de abas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HWT-11 — Autonomia -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Autonomia</div>
+      <h2 class="heading-lg font-serif mt-3">Feito para você colocar em prática.</h2>
+      <p class="body-lg mt-4">O Blueprint não é uma etapa que obriga você a contratar algo depois. Ele foi criado para uso independente: você pode seguir com as reservas por conta própria, na ordem indicada e com o raciocínio disponível para consulta.</p>
+      <p class="body-lg mt-4">O documento é completo por si só. Se mais tarde você quiser um apoio de design mais profundo, essa será uma escolha separada e opcional. Nada disso reduz o que o Blueprint já entrega.</p>
+    </div>
+  </section>
+
+  <!-- HWT-12 — Convite final (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow text-center">
+      <div class="eyebrow eyebrow-light">Convite final</div>
+      <h2 class="heading-xl font-serif mt-3">Pronto para enxergar a sua viagem por essa perspectiva?</h2>
+      <p class="body-lg mt-6">Se você está há algum tempo voltando às mesmas opções, este é o momento de parar de apenas compará-las e começar a decidir o que realmente faz parte.</p>
+      <div class="flex justify-center mt-8" style="gap: var(--space-3); flex-wrap: wrap;">
+        <a href="get-started.html" class="btn btn--dark" style="background: var(--elz-white); color: var(--elz-black); border-color: var(--elz-white);">Comece Aqui</a>
+        <a href="blueprint.html" class="btn btn--outline-light">Conheça o Blueprint</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="section-dark py-16 px-6" aria-label="Rodapé do site">
+    <div class="container">
+      <div class="grid grid-4" style="gap: var(--space-8); text-align: left;">
+        <div>
+          <div class="elz-header__logo" style="color: var(--elz-white);">ELUZA</div>
+          <div class="elz-header__tagline" style="color: var(--elz-dull);">Private Travel Design Studio</div>
+          <p class="mt-4" style="font-size: var(--text-md); color: var(--elz-dust);">Clareza para a viagem, antes dos primeiros compromissos.</p>
+          <p class="mt-3" style="font-size: var(--text-sm); color: var(--elz-dull);">Estúdio privado de design de viagens com sede em Nova York. Consultas com hora marcada e projetos conduzidos à distância nos Estados Unidos e em outros países.</p>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Explore a ELUZA">
+          <div class="site-footer__group-title">Explore</div>
+          <a href="how-we-think.html">Como Pensamos</a>
+          <a href="blueprint.html">Blueprint</a>
+          <a href="case-studies.html">Estudos de Caso</a>
+          <a href="before-you-book.html">Antes de Reservar</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Sobre o estúdio">
+          <div class="site-footer__group-title">Estúdio</div>
+          <a href="about.html">Sobre</a>
+          <a href="mailto:design@eluza.co" aria-label="Enviar email para a ELUZA">design@eluza.co</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Legal e idioma">
+          <div class="site-footer__group-title">Legal e idioma</div>
+          <a href="terms.html">Termos</a>
+          <a href="privacy.html">Privacidade</a>
+          <span style="display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0;">PT-BR · <a href="../how-we-think.html" style="display: inline; padding: 0; text-decoration: underline;" lang="en">EN</a></span>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--elz-shoe-wax); margin-top: var(--space-12); padding-top: var(--space-6);">
+        <span style="font-size: var(--text-sm); color: var(--elz-dull);">2024 ELUZA &copy;</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

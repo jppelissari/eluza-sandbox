@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint Clarification — ELUZA</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="eluza-global.css">
+  <style>
+    .skip-link { position: absolute; left: -9999px; top: 0; background: var(--elz-black); color: var(--elz-white); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); z-index: 200; }
+    .skip-link:focus { left: var(--space-4); top: var(--space-4); }
+  </style>
+</head>
+<body style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-surface);">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER (minimal, transactional) -->
+  <header class="elz-header">
+    <div class="elz-header__inner container">
+      <a href="index.html" aria-label="ELUZA — home">
+        <div class="elz-header__logo">ELUZA</div>
+        <div class="elz-header__tagline">Private Travel Design Studio</div>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="py-16 px-6">
+    <div class="container container-tight">
+      <div class="eyebrow">Trip Design Blueprint — Clarification</div>
+      <h1 class="heading-xl font-serif mt-3">One question set. One clear response.</h1>
+      <p class="body-lg mt-6">If something in the delivered Blueprint is unclear, send one consolidated written request within 7 calendar days of delivery.</p>
+      <p class="body-lg mt-4">Use the section title or decision you are referring to and explain what you need help interpreting. Clarification can explain the reasoning or how to apply a delivered decision. It cannot add research, rebuild the route, replace the structure, or introduce a new trip.</p>
+
+      <form class="mt-10">
+        <div class="form-group">
+          <label class="form-label" for="cl-email">Email address used for purchase</label>
+          <input id="cl-email" type="email" class="input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cl-request">Your consolidated clarification request</label>
+          <div class="form-hint">Reference the section title or decision, and explain what you need help interpreting.</div>
+          <textarea id="cl-request" class="textarea" style="min-height: 200px;" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--dark btn--lg w-full">Send Clarification Request</button>
+      </form>
+
+      <div class="action-box mt-10">
+        <div class="action-box__title">After you send your request.</div>
+        <div class="action-box__body">ELUZA will respond within 3 business days. If part of the request changes the trip or requires new work, we will identify that separately before any additional scope or charge is proposed.</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 class="heading-md font-serif">If the clarification window has closed.</h2>
+      <p class="body-md mt-3">If the trip has changed or you now need additional design work, contact <a href="mailto:design@eluza.co" style="text-decoration: underline;" aria-label="Email ELUZA">design@eluza.co</a>. ELUZA will identify the appropriate scope before any charge or work begins.</p>
+
+      <p class="mt-8" style="font-size: var(--text-sm); color: var(--color-text-muted);">The Blueprint is a final decision document and does not include a revision round. See the <a href="terms.html" style="text-decoration: underline;">Terms of Service</a> for the full clarification policy.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER (minimal, transactional) -->
+  <footer class="elz-footer" aria-label="Site footer">
+    <p class="elz-footer__text">ELUZA — Private Travel Design Studio</p>
+    <div class="elz-footer__links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:design@eluza.co" aria-label="Email ELUZA">design@eluza.co</a>
+    </div>
+  </footer>
+
+</body>
+</html>

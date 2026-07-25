@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudos de Caso — ELUZA</title>
+  <meta name="description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Decisões reais, aplicadas a viagens reais.">
+  <meta property="og:description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <link rel="stylesheet" href="../eluza-global.css">
+  <style>
+    .skip-link { position: absolute; left: -9999px; top: 0; background: var(--elz-black); color: var(--elz-white); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); z-index: 200; }
+    .skip-link:focus { left: var(--space-4); top: var(--space-4); }
+    .elz-header__nav a[aria-current="page"] { color: var(--color-text-primary); font-weight: var(--weight-medium); }
+    .site-footer__group-title { font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--elz-dull); margin-bottom: var(--space-3); }
+    .site-footer__links a { display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0; }
+    .site-footer__links a:hover { color: var(--elz-white); }
+    .cs-list { list-style: none; margin-top: var(--space-4); }
+    .cs-list li { padding: var(--space-2) 0; padding-left: var(--space-5); position: relative; font-size: var(--text-lg); line-height: var(--leading-loose); color: var(--color-text-secondary); }
+    .cs-list li::before { content: ''; position: absolute; left: 0; top: 14px; width: 5px; height: 5px; border-radius: var(--radius-full); background: var(--elz-black); }
+    .cs-route { font-family: var(--font-serif); font-size: var(--text-3xl); line-height: var(--leading-relaxed); margin: var(--space-4) 0; }
+    .cs-study { border-top: 1px solid var(--color-border); }
+    .cs-meta { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-3); line-height: var(--leading-loose); }
+    .cs-block-label { font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-top: var(--space-8); margin-bottom: var(--space-2); }
+  </style>
+</head>
+<body style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-surface);">
+
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header class="elz-header">
+    <div class="elz-header__inner container">
+      <a href="index.html" aria-label="ELUZA — página inicial">
+        <div class="elz-header__logo">ELUZA</div>
+        <div class="elz-header__tagline">Private Travel Design Studio</div>
+      </a>
+      <nav class="elz-header__nav" aria-label="Navegação principal">
+        <a href="how-we-think.html">Como Pensamos</a>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="case-studies.html" aria-current="page">Estudos de Caso</a>
+        <a href="before-you-book.html">Antes de Reservar</a>
+        <a href="about.html">Sobre</a>
+        <a href="get-started.html" class="btn btn--dark btn--sm">Comece Aqui</a>
+        <a href="../case-studies.html" aria-label="Mudar idioma" lang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- CS-L01 — Padrão de prova -->
+  <section class="hero">
+    <div class="container container-narrow">
+      <div class="hero__eyebrow">Estudos de Caso</div>
+      <h1 class="hero__title font-serif" style="font-size: var(--text-8xl);">Decisões reais, aplicadas a viagens reais.</h1>
+      <p class="hero__sub" style="max-width: var(--max-width-lg);">Estes não são guias de destino nem um portfólio de lugares. Cada estudo começa com uma tensão verdadeira de planejamento: várias boas opções, uma única viagem e uma decisão que não poderia ser tomada isoladamente.</p>
+      <p class="body-lg mt-4" style="max-width: var(--max-width-lg);">Os casos são anonimizados. As decisões são reais. O que importa não é apenas para onde o viajante foi, mas como rota, sequência, ritmo, bases, omissões e a ordem das decisões mudaram o que cabia na viagem.</p>
+    </div>
+  </section>
+
+  <!-- CS-L02 — Reconhecimento -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Leia pelo conflito, não pelo destino.</h2>
+      <p class="body-lg mt-4">Pesquisa não era o que faltava. Os planos já reuniam bons hotéis, lugares que valiam a pena e rotas plausíveis. A dificuldade apareceu quando tudo precisou funcionar junto: uma cidade no momento errado, uma base tentando cumprir duas funções incompatíveis, uma ilha que mudava o tom da viagem ou uma reserva feita antes da decisão da qual dependia.</p>
+      <p class="body-lg mt-4">É nesse ponto que o design de viagem se torna visível.</p>
+    </div>
+  </section>
+
+  <!-- CS-L03 — Estudos em destaque -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Estudos completos</h2>
+      <div class="grid grid-2 mt-8" style="gap: var(--space-4);">
+        <div class="card card--hover">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">Japão sem a armadilha do checklist</h3>
+          <p class="body-md">Um plano aparentemente completo ainda parecia cansativo. O problema não era o que o Japão oferecia, mas a ordem em que o viajante teria de viver cada etapa.</p>
+          <a href="#japao" class="link-arrow mt-4">Ler o caso do Japão <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="card card--hover">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">Itália depois de boas opções demais</h3>
+          <p class="body-md">Cada região tinha motivos para entrar. O trabalho foi decidir quais boas opções precisavam sair para que uma única viagem coerente pela Itália pudesse permanecer.</p>
+          <a href="#italia" class="link-arrow mt-4">Ler o caso da Itália <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="card card--hover">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">Grécia sem produzir demais a ocasião</h3>
+          <p class="body-md">Uma viagem de celebração acumulava pressão em nome de ser especial. A decisão de design foi encontrar proporção — não acrescentar mais produção.</p>
+          <a href="#grecia" class="link-arrow mt-4">Ler o caso da Grécia <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="card card--hover">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">A estrutura por trás de uma viagem pela Europa reservada pelo próprio viajante</h3>
+          <p class="body-md">O viajante sabia realizar todas as reservas. O que exigia critério externo era decidir se aquela rota realmente merecia ser reservada.</p>
+          <a href="#europa" class="link-arrow mt-4">Ler o caso da Europa <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <h2 class="heading-md font-serif mt-12">Leituras mais curtas</h2>
+      <div class="grid grid-2 mt-6" style="gap: var(--space-4);">
+        <div class="card card--hover card--subtle">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">Uma primeira lua de mel no Japão</h3>
+          <p class="body-md">Uma viagem, quatro movimentos e uma ordem de decisões construída ao redor da reserva com maior peso emocional.</p>
+          <a href="#lua-de-mel" class="link-arrow mt-4">Ler o caso curto <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="card card--hover card--subtle">
+          <h3 class="heading-sm font-serif" style="margin-bottom: var(--space-3);">Um capítulo em família pela Itália</h3>
+          <p class="body-md">Uma viagem de aniversário de 16 noites precisava funcionar para quatro viajantes sem transformar cada preferência em outro destino.</p>
+          <a href="#familia" class="link-arrow mt-4">Ler o caso curto <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CS-L04 — Microdecisões (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-xl font-serif">Às vezes, toda a disciplina aparece em uma única decisão.</h2>
+      <div class="grid grid-2 mt-8" style="gap: var(--space-6);">
+        <div>
+          <h3 class="heading-sm font-serif" style="color: var(--elz-white); margin-bottom: var(--space-3);">Mantenha o lugar. Mude as condições.</h3>
+          <p class="body-md"><strong style="color: var(--elz-kingly);">Instinto inicial:</strong> Retirar o bosque de bambu de Arashiyama por ser famoso e cheio.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">Decisão ELUZA:</strong> Manter a visita, mas marcá-la para 6h30.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">O que isso protegeu:</strong> O motivo de o lugar fazer parte da viagem, sem aceitar sua versão mais lotada.</p>
+        </div>
+        <div>
+          <h3 class="heading-sm font-serif" style="color: var(--elz-white); margin-bottom: var(--space-3);">Mude o litoral, não a função do encerramento.</h3>
+          <p class="body-md"><strong style="color: var(--elz-kingly);">Instinto inicial:</strong> Encerrar uma viagem de família em julho na Costa Amalfitana.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">Decisão ELUZA:</strong> Usar a Puglia como capítulo final no litoral sul.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">O que isso protegeu:</strong> O ritmo final da família contra estradas congestionadas, transfers repetidos e uma etapa que exigiria esforço demais.</p>
+        </div>
+        <div>
+          <h3 class="heading-sm font-serif" style="color: var(--elz-white); margin-bottom: var(--space-3);">Trate o deslocamento como parte da viagem.</h3>
+          <p class="body-md"><strong style="color: var(--elz-kingly);">Instinto inicial:</strong> Construir uma rota França&ndash;Suíça com base nas conexões de trem mais rápidas.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">Decisão ELUZA:</strong> Refazer a sequência considerando a função das bases, altitude, recuperação e o papel da cidade final.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">O que isso protegeu:</strong> A possibilidade de chegar a cada lugar com atenção suficiente para aproveitá-lo.</p>
+        </div>
+        <div>
+          <h3 class="heading-sm font-serif" style="color: var(--elz-white); margin-bottom: var(--space-3);">Desenhe o encerramento como parte da estrutura.</h3>
+          <p class="body-md"><strong style="color: var(--elz-kingly);">Instinto inicial:</strong> Usar os últimos dias para mais uma cidade ou outra rodada intensa de passeios.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">Decisão ELUZA:</strong> Reduzir o encerramento e prepará-lo para o retorno.</p>
+          <p class="body-md mt-2"><strong style="color: var(--elz-kingly);">O que isso protegeu:</strong> O tom emocional do fim da viagem, evitando outro pico logístico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estudo completo 01 — Japão -->
+  <section id="japao" class="cs-study py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Estudo completo 01</div>
+      <h2 class="heading-xl font-serif mt-3">Japão sem a armadilha do checklist</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Trip Design Blueprint, com possível progressão para Full Design<br><strong>Contexto da viagem:</strong> Primeira viagem ao Japão; viajante experiente e independente; várias rotas pesquisadas; nenhuma reserva necessária para compreender o caso</p>
+
+      <div class="cs-block-label">Contexto</div>
+      <p class="body-lg">O viajante já havia comparado hotéis, salvo restaurantes, lido fóruns, pedido indicações e criado várias rotas. O plano não era descuidado. No papel, parecia eficiente e completo.</p>
+      <p class="body-lg mt-3">O desconforto era mais difícil de nomear: os lugares estavam certos, mas viver a viagem daquela maneira parecia cansativo.</p>
+
+      <div class="cs-block-label">Tensão estrutural</div>
+      <p class="body-lg">A tensão estava na sequência sensorial. O Japão era tratado como uma lista de destinos ligados por trens, embora cada lugar exigisse algo diferente da atenção do viajante.</p>
+      <p class="body-lg mt-3">Tóquio concentrava a maior carga cognitiva. Quioto carregava a maior expectativa simbólica. Hakone entrava onde a geografia permitia. Osaka estava presente porque ficava perto. A rota equilibrava distâncias, mas não a energia disponível.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">A estrutura inicial era familiar e defensável:</p>
+      <p class="cs-route">Tóquio &rarr; Quioto &rarr; Osaka &rarr; Hakone &rarr; Tóquio</p>
+      <p class="body-lg">Começar por Tóquio fazia sentido porque o voo chegava ali. Osaka parecia merecer uma estadia própria. Hakone poderia entrar onde a sequência de trens permitisse. Separadamente, nenhuma dessas decisões era irracional.</p>
+
+      <div class="cs-block-label">Decisões ELUZA</div>
+      <p class="body-lg">O eixo foi invertido:</p>
+      <p class="cs-route">Kanazawa &rarr; Quioto &rarr; Hakone &rarr; Tóquio</p>
+      <ul class="cs-list">
+        <li>Começar em Kanazawa, permitindo uma chegada sem intensidade urbana imediata.</li>
+        <li>Reduzir as obrigações em Quioto e dar mais profundidade à cidade.</li>
+        <li>Retirar Osaka como base; mantê-la disponível como visita opcional a partir de Quioto.</li>
+        <li>Colocar Hakone depois de Quioto, para que a pausa funcionasse como alívio, não interrupção.</li>
+        <li>Deixar Tóquio para o fim, quando o viajante teria presença para viver sua densidade.</li>
+        <li>Proteger um dia inteiro de margem e quase nenhuma decisão na chegada.</li>
+      </ul>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">Começar por Tóquio colocaria o ambiente mais exigente no momento de menor disponibilidade física. Quioto teria de compensar, acumulando templos, mercados, refeições e bate-e-volta. Osaka acrescentaria check-out, transfer, check-in e nova adaptação sem retorno estrutural suficiente. Hakone, posicionada apenas pela geografia, perderia sua função no arco da viagem.</p>
+      <p class="body-lg mt-3">O redesenho não tornou o Japão menor. Deu a cada etapa uma função: recepção, profundidade cultural, alívio e integração.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>A energia da chegada, com menos decisões no início.</li>
+        <li>A profundidade de Quioto, sem transformar a cidade em uma planilha cultural.</li>
+        <li>A continuidade, retirando uma troca de hotel desnecessária.</li>
+        <li>A função de Hakone, posicionando a pausa depois de uma etapa intensa.</li>
+        <li>O impacto de Tóquio, como culminação em vez de exigência inicial.</li>
+        <li>Os últimos dias, preservando espaço para descobertas do próprio viajante.</li>
+      </ul>
+
+      <div class="cs-block-label">Conexão com o produto</div>
+      <p class="body-lg">É esse tipo de problema que o Trip Design Blueprint resolve antes das reservas: não quais recomendações do Japão são populares, mas quando cada lugar deve acontecer, quanto é suficiente, o que retirar e quais compromissos precisam esperar até a estrutura ficar clara.</p>
+
+      <div class="flex mt-8" style="gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+        <a href="blueprint.html" class="btn btn--dark">Conheça o Blueprint</a>
+        <a href="get-started.html" class="link-arrow">Comece Aqui <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estudo completo 02 — Itália -->
+  <section id="italia" class="cs-study section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Estudo completo 02</div>
+      <h2 class="heading-xl font-serif mt-3">Itália depois de boas opções demais</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Trip Design Blueprint<br><strong>Contexto da viagem:</strong> 12 dias na Itália; pesquisa extensa; várias versões defensáveis; estrutura ainda aberta</p>
+
+      <div class="cs-block-label">Contexto</div>
+      <p class="body-lg">Roma fazia parte. Florença parecia essencial. A Toscana parecia certa, mas ainda imprecisa. A Costa Amalfitana tinha a força emocional do encerramento. Veneza, Lago de Como, Cinque Terre e Puglia continuavam voltando porque havia bons argumentos para cada uma.</p>
+      <p class="body-lg mt-3">O viajante não precisava de ajuda para encontrar boas opções. A Itália já havia produzido opções demais.</p>
+
+      <div class="cs-block-label">Tensão estrutural</div>
+      <p class="body-lg">A tensão era hierarquia. Cinco bases atraentes em doze dias fariam a viagem parecer variada no papel e fragmentada na prática. Cada região adicional mudava deslocamentos, lógica de hotéis e o arco emocional da rota.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">O plano continuava crescendo pelo apelo de cada lugar:</p>
+      <p class="cs-route">Roma &rarr; Florença &rarr; Toscana &rarr; Veneza &rarr; Costa Amalfitana</p>
+      <p class="body-lg">Cada inclusão parecia razoável. Retirar qualquer uma parecia perder parte da Itália. Nenhuma decisão orientava as demais.</p>
+
+      <div class="cs-block-label">Decisões ELUZA</div>
+      <p class="body-lg">A rota foi reduzida a quatro fases:</p>
+      <p class="cs-route">Roma &rarr; Florença &rarr; Toscana rural &rarr; Costa Amalfitana</p>
+      <ul class="cs-list">
+        <li>Deixar Veneza para outra viagem.</li>
+        <li>Separar Florença da Toscana rural, em vez de exigir duas funções da mesma base.</li>
+        <li>Escolher a base toscana por estradas, refeições, necessidade de motorista e recuperação — não apenas pelas imagens.</li>
+        <li>Limitar as exigências dos primeiros dias em Roma.</li>
+        <li>Proteger um dia no campo sem passeios.</li>
+        <li>Tratar Amalfi como encerramento, não como outra região acrescentada.</li>
+        <li>Retirar Cinque Terre e recusar a inclusão automática de Capri.</li>
+      </ul>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">Florença e a Toscana rural estão próximas, mas funcionam de maneiras diferentes. Combiná-las colocaria museus, decisões de estrada, motoristas e expectativas do campo na mesma estadia. Veneza criaria um segundo eixo ao norte. Cinque Terre repetiria a função costeira sem melhorar o arco. Amalfi exige acesso suficiente para precisar de tempo e função claros.</p>
+      <p class="body-lg mt-3">A rota precisava ser uma versão coerente da Itália, não um acordo entre todas as versões possíveis.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>Tempo em cada lugar, em vez de transições repetidas.</li>
+        <li>A concentração de Florença e a função de recuperação da Toscana.</li>
+        <li>Uma base rural que funcionasse na prática.</li>
+        <li>O litoral como fase final verdadeira, não recompensa comprimida depois de uma rota cheia.</li>
+        <li>A capacidade de reservar a partir de uma hierarquia, sem reabrir toda a viagem a cada nova opção.</li>
+      </ul>
+
+      <div class="cs-block-label">Conexão com o produto</div>
+      <p class="body-lg">Neste caso, o Blueprint não acrescentou mais Itália. Definiu a rota, a função de cada base, as omissões e a ordem em que as estadias mais importantes deveriam ser assumidas.</p>
+
+      <div class="flex mt-8" style="gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+        <a href="blueprint.html" class="btn btn--dark">Conheça o Blueprint</a>
+        <a href="get-started.html" class="link-arrow">Comece Aqui <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estudo completo 03 — Grécia -->
+  <section id="grecia" class="cs-study py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Estudo completo 03</div>
+      <h2 class="heading-xl font-serif mt-3">Grécia sem produzir demais a ocasião</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Full Design, com Signature Travel Architecture quando a coordenação ao vivo se justifica<br><strong>Contexto da viagem:</strong> Celebração de 11 dias; sequência de ilhas indefinida; peso emocional maior do que a duração comportava</p>
+
+      <div class="cs-block-label">Contexto</div>
+      <p class="body-lg">O casal queria uma viagem cuidadosamente pensada: privacidade, bons hotéis, tempo perto da água, boa comida e pelo menos um momento à altura da ocasião.</p>
+      <p class="body-lg mt-3">A pressão vinha da tentativa de tornar essa importância visível todos os dias. Mais ilhas, reservas para o pôr do sol e gestos produzidos começavam a fazer a viagem parecer administrada antes mesmo de começar.</p>
+
+      <div class="cs-block-label">Tensão estrutural</div>
+      <p class="body-lg">A tensão era proporção emocional. A Grécia oferecia imagens abundantes de romance, mas a rota também envolvia balsas, portos, vento, check-ins e adaptação constante. A viagem poderia parecer íntima e ainda ser operacional demais.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">As primeiras versões tentavam comportar tudo:</p>
+      <p class="cs-route">Santorini &rarr; Paros &rarr; Mykonos &rarr; Creta</p>
+      <p class="body-lg">Santorini parecia merecer o primeiro compromisso por ser o centro emocional. Mykonos acrescentava reconhecimento. Creta trazia profundidade. Cada ilha era atraente; juntas, competiam pela mesma viagem.</p>
+
+      <div class="cs-block-label">Decisões ELUZA</div>
+      <p class="body-lg">A rota passou a ser:</p>
+      <p class="cs-route">Atenas &rarr; Paros &rarr; Antiparos &rarr; Santorini</p>
+      <ul class="cs-list">
+        <li>Manter Atenas, mas transformá-la em uma abertura mais suave.</li>
+        <li>Retirar Mykonos, cuja visibilidade social contrariava a privacidade desejada.</li>
+        <li>Retirar Creta, que exigia uma arquitetura própria.</li>
+        <li>Usar Paros para ritmo e Antiparos para redução.</li>
+        <li>Deixar Santorini para o fim, por pouco tempo e ao redor de um único momento preciso.</li>
+        <li>Proteger os dias de balsa e considerar o clima sem fingir que as condições eram controláveis.</li>
+        <li>Substituir gestos românticos repetidos por uma única âncora da celebração.</li>
+      </ul>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">Santorini primeiro colocaria a maior intensidade simbólica antes de o casal entrar no ritmo da viagem. Mykonos mudaria o tom para visibilidade. Creta não poderia ser incluída de forma responsável como apenas mais uma ilha curta. Repetir jantares ao pôr do sol e gestos especiais faria a ocasião parecer encenada.</p>
+      <p class="body-lg mt-3">Cada fase precisava de uma função emocional: chegada, ritmo, privacidade e culminação controlada.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>A celebração, evitando que se tornasse uma performance constante.</li>
+        <li>A privacidade no centro da viagem.</li>
+        <li>A recuperação entre os deslocamentos de ilha.</li>
+        <li>A força visual legítima de Santorini, sem exigir que carregasse toda a viagem.</li>
+        <li>Flexibilidade diante de balsas, vento e clima.</li>
+        <li>O significado da ocasião, concentrando-o em vez de repeti-lo.</li>
+      </ul>
+
+      <div class="cs-block-label">Conexão com o produto</div>
+      <p class="body-lg">Esta viagem exigia mais do que validar uma rota. A estrutura pertencia ao Full Design; Signature seria adequado somente se o casal quisesse coordenação ao vivo, comunicação com propriedades ou suporte em deslocamentos sensíveis ao clima. A complexidade, sozinha, não determinava o serviço; o nível de participação desejado, sim.</p>
+
+      <div class="flex mt-8" style="gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+        <a href="get-started.html" class="btn btn--dark">Comece Aqui</a>
+        <span style="font-size: var(--text-md); color: var(--color-text-muted);">Não sabe qual nível de apoio escolher? <a href="fit-call.html" style="color: var(--color-text-primary); text-decoration: underline;">Comece com um Fit Call</a>.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estudo completo 04 — Europa -->
+  <section id="europa" class="cs-study section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Estudo completo 04</div>
+      <h2 class="heading-xl font-serif mt-3">A estrutura por trás de uma viagem pela Europa reservada pelo próprio viajante</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Trip Design Blueprint<br><strong>Contexto da viagem:</strong> 11 dias entre França e Suíça; viajante experiente; reservas sob responsabilidade do cliente</p>
+
+      <div class="cs-block-label">Contexto</div>
+      <p class="body-lg">O viajante sabia comparar hotéis, comprar bilhetes de trem, escolher restaurantes e montar um arquivo de viagem organizado. O pedido não era entregar as reservas a outra pessoa.</p>
+      <p class="body-lg mt-3">A dúvida vinha antes: se Borgonha merecia uma parada, qual lado do Lago de Genebra servia à rota, se Zermatt criava dependência demais do clima e se Zurique era um encerramento ou apenas uma noite perto do aeroporto.</p>
+
+      <div class="cs-block-label">Tensão estrutural</div>
+      <p class="body-lg">A tensão estava no custo das transições. No mapa, Paris, Borgonha, Lago de Genebra, Zermatt e Zurique formavam uma linha elegante. Na prática, essa linha seria vivida com malas, plataformas, check-ins, altitude, clima e recuperação.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">A rota provável era:</p>
+      <p class="cs-route">Paris &rarr; Dijon &rarr; Genebra &rarr; Zermatt &rarr; Zurique</p>
+      <p class="body-lg">Depois apareceram Lucerna, Interlaken, Annecy, Chamonix e trechos ferroviários panorâmicos. Cada inclusão parecia eficiente porque havia trens. Proximidade ferroviária começou a substituir a lógica da viagem.</p>
+
+      <div class="cs-block-label">Decisões ELUZA</div>
+      <p class="body-lg">A rota pública permaneceu limpa:</p>
+      <p class="cs-route">Paris &rarr; Borgonha &rarr; Lago de Genebra &rarr; Zermatt &rarr; Zurique</p>
+      <ul class="cs-list">
+        <li>Fazer da Borgonha uma fase real e escolher a base pela função, não apenas pela conveniência ferroviária.</li>
+        <li>Não usar Genebra como resposta automática para o lago; escolher Lausanne ou Montreux conforme o ritmo desejado.</li>
+        <li>Manter Zermatt, mas dar valor à fase mesmo que a montanha não aparecesse.</li>
+        <li>Retirar Interlaken, Lucerna, Chamonix e Annecy desta duração.</li>
+        <li>Tratar Zurique como encerramento, não preenchimento.</li>
+        <li>Incluir margens para malas e recuperação na sequência de trens.</li>
+        <li>Validar a rota antes de comprar transportes não reembolsáveis.</li>
+      </ul>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">Um trem rápido não deixava o dia livre. A Borgonha precisava de tempo e de uma base adequada para não virar apenas uma transição. O Lago de Genebra precisava de função, não de uma cidade famosa por padrão. O valor de Zermatt não poderia depender de uma vista garantida. Acrescentar outra região alpina criaria nova obrigação cênica, não mais profundidade.</p>
+      <p class="body-lg mt-3">A rota precisava funcionar como sequência de estados — cidade, região vinícola, lago, montanha e retorno —, não como coleção de conexões eficientes.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>O controle do viajante sobre as reservas, sem obrigá-lo a desenhar a estrutura sozinho.</li>
+        <li>Recuperação suficiente para cada nova base começar a funcionar.</li>
+        <li>O valor de Zermatt mesmo com clima variável.</li>
+        <li>Um plano ferroviário que considerasse malas e adaptação, não apenas o tempo do trem.</li>
+        <li>Uma cidade final com função clara no retorno.</li>
+        <li>A rota, evitando que bilhetes comprados cedo demais passassem a defini-la.</li>
+      </ul>
+
+      <div class="cs-block-label">Conexão com o produto</div>
+      <p class="body-lg">Este é o caso mais claro de autonomia do Blueprint. A ELUZA definiu ordem da rota, lógica das bases, direção de noites, riscos de transição, omissões e o que precisava ser decidido primeiro. O viajante manteve as reservas.</p>
+
+      <div class="flex mt-8" style="gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+        <a href="blueprint.html" class="btn btn--dark">Conheça o Blueprint</a>
+        <a href="get-started.html" class="link-arrow">Comece Aqui <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caso curto 01 — Lua de mel -->
+  <section id="lua-de-mel" class="cs-study py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Caso curto 01</div>
+      <h2 class="heading-xl font-serif mt-3">Uma primeira lua de mel no Japão</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Trip Design Blueprint<br><strong>Contexto da viagem:</strong> 11 noites; primeira visita; lua de mel; pesquisa independente; estrutura aberta</p>
+
+      <p class="body-lg mt-6">O casal havia salvo templos, ryokans, hotéis, restaurantes e orientações sobre trens. A lista era extensa. A sequência, não.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">Tratar Tóquio como uma única abertura, acrescentar Quioto e Osaka porque eram esperadas e decidir cedo os produtos de transporte para garantir eficiência.</p>
+
+      <div class="cs-block-label">Decisão ELUZA</div>
+      <p class="body-lg">Construir quatro movimentos com funções diferentes:</p>
+      <p class="cs-route">Chegada em Tóquio &rarr; Hakone &rarr; Quioto &rarr; retorno a Tóquio</p>
+      <p class="body-lg">A primeira passagem por Tóquio foi deliberadamente leve. Hakone se tornou a âncora emocional, não um desvio conveniente. Quioto recebeu tempo para profundidade. Osaka continuou disponível sem virar outra base. Tóquio voltou no fim, quando poderia ser vivida de maneira diferente.</p>
+      <p class="body-lg mt-3">A ordem seguiu a estrutura: confirmar primeiro a rota e a estadia-âncora; escolher regiões e transporte somente depois. Nenhum passe de trem poderia definir a viagem antecipadamente.</p>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">Uma lua de mel não precisava representar a ocasião todos os dias. Precisava de uma âncora forte, uma chegada protegida, profundidade cultural seletiva e energia para aproveitar a fase final. Dividir Tóquio não era repetição; cada estadia tinha uma função.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>A chegada, sem expectativas imediatas.</li>
+        <li>O ryokan, evitando que virasse apenas mais um item entre cidades.</li>
+        <li>Quioto, sem compressão em formato de checklist.</li>
+        <li>A autonomia do casal para realizar as reservas.</li>
+        <li>O encerramento, permitindo viver Tóquio com atenção construída pela rota.</li>
+      </ul>
+
+      <div class="mt-8">
+        <a href="blueprint.html" class="btn btn--dark">Conheça o Blueprint</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caso curto 02 — Família -->
+  <section id="familia" class="cs-study section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <div class="eyebrow">Caso curto 02</div>
+      <h2 class="heading-xl font-serif mt-3">Um capítulo em família pela Itália</h2>
+      <p class="cs-meta"><strong>Contexto de serviço:</strong> Signature Travel Architecture<br><strong>Contexto da viagem:</strong> 16 noites; quatro viajantes principais; 25º aniversário; participação opcional da avó e de amigos; vários países considerados</p>
+
+      <p class="body-lg mt-6">O briefing parecia uma discordância sobre destinos. Um dos pais buscava elegância; o outro queria evitar o previsível. Os filhos precisavam de graus diferentes de estabilidade, autonomia e energia. Grécia, Turquia, França, Londres, Sicília e várias versões da Itália continuavam em aberto.</p>
+
+      <div class="cs-block-label">Instinto inicial</div>
+      <p class="body-lg">Tentar atender às preferências pela geografia: mais países, mais contraste e um encerramento familiar em Amalfi.</p>
+
+      <div class="cs-block-label">Decisão ELUZA</div>
+      <p class="body-lg">Encerrar o debate de destinos e desenhar uma única estrutura italiana, do norte ao sul:</p>
+      <p class="cs-route">Lago de Como &rarr; Toscana rural &rarr; Puglia</p>
+      <p class="body-lg">A viagem usou três bases principais. Como recebeu a chegada e a participação da avó. A Toscana se tornou o centro estrutural e a janela protegida do aniversário. Puglia substituiu Amalfi no encerramento e poderia receber os amigos sem depender deles. Roma permaneceu opcional como mecanismo de uma noite, não como quarto destino obrigatório.</p>
+
+      <div class="cs-block-label">Por quê</div>
+      <p class="body-lg">A família não precisava representar todas as preferências em todas as etapas. Precisava que fases diferentes atendessem a viajantes diferentes no momento certo. Amalfi em julho acrescentaria trânsito, calor, multidões e transfers repetidos ao encerramento. Uma estrutura em dois países aumentaria o esforço sem resolver o conflito central.</p>
+
+      <div class="cs-block-label">O que isso protegeu</div>
+      <ul class="cs-list">
+        <li>Uma viagem coerente para quatro pessoas sem negociação diária.</li>
+        <li>O aniversário como momento privado e deliberadamente posicionado.</li>
+        <li>Avó e amigos como módulos destacáveis, não restrições para toda a rota.</li>
+        <li>A estabilidade e a autonomia dos filhos em momentos diferentes.</li>
+        <li>O encerramento, evitando que fosse a etapa mais exigente em termos operacionais.</li>
+      </ul>
+
+      <div class="flex mt-8" style="gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+        <a href="get-started.html" class="btn btn--dark">Comece Aqui</a>
+        <span style="font-size: var(--text-md); color: var(--color-text-muted);">Não sabe se a viagem exige esse nível de design? <a href="fit-call.html" style="color: var(--color-text-primary); text-decoration: underline;">Comece com um Fit Call</a>.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CS-L05 — Progressão (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow text-center">
+      <h2 class="heading-xl font-serif">O mesmo critério pode ser aplicado antes das suas próprias reservas.</h2>
+      <p class="body-lg mt-6">O Trip Design Blueprint transforma esse raciocínio em um documento para a sua viagem: estrutura, decisões, contrapartidas, omissões e a ordem em que agir.</p>
+      <div class="flex justify-center mt-8" style="gap: var(--space-3); flex-wrap: wrap;">
+        <a href="blueprint.html" class="btn btn--dark" style="background: var(--elz-white); color: var(--elz-black); border-color: var(--elz-white);">Conheça o Blueprint</a>
+      </div>
+      <div class="mt-4">
+        <a href="how-we-think.html" class="link-arrow link-arrow--light">Veja Como Pensamos <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="section-dark py-16 px-6" aria-label="Rodapé do site">
+    <div class="container">
+      <div class="grid grid-4" style="gap: var(--space-8); text-align: left;">
+        <div>
+          <div class="elz-header__logo" style="color: var(--elz-white);">ELUZA</div>
+          <div class="elz-header__tagline" style="color: var(--elz-dull);">Private Travel Design Studio</div>
+          <p class="mt-4" style="font-size: var(--text-md); color: var(--elz-dust);">Clareza para a viagem, antes dos primeiros compromissos.</p>
+          <p class="mt-3" style="font-size: var(--text-sm); color: var(--elz-dull);">Estúdio privado de design de viagens com sede em Nova York. Consultas com hora marcada e projetos conduzidos à distância nos Estados Unidos e em outros países.</p>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Explore a ELUZA">
+          <div class="site-footer__group-title">Explore</div>
+          <a href="how-we-think.html">Como Pensamos</a>
+          <a href="blueprint.html">Blueprint</a>
+          <a href="case-studies.html">Estudos de Caso</a>
+          <a href="before-you-book.html">Antes de Reservar</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Sobre o estúdio">
+          <div class="site-footer__group-title">Estúdio</div>
+          <a href="about.html">Sobre</a>
+          <a href="mailto:design@eluza.co" aria-label="Enviar email para a ELUZA">design@eluza.co</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Legal e idioma">
+          <div class="site-footer__group-title">Legal e idioma</div>
+          <a href="terms.html">Termos</a>
+          <a href="privacy.html">Privacidade</a>
+          <span style="display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0;">PT-BR · <a href="../case-studies.html" style="display: inline; padding: 0; text-decoration: underline;" lang="en">EN</a></span>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--elz-shoe-wax); margin-top: var(--space-12); padding-top: var(--space-6);">
+        <span style="font-size: var(--text-sm); color: var(--elz-dull);">2024 ELUZA &copy;</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

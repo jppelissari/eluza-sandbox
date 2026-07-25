@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Call — ELUZA</title>
+  <meta name="description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Quando o melhor ponto de partida ainda não está claro.">
+  <meta property="og:description" content="ELUZA — estrutura e critério para as decisões que dão forma à viagem.">
+  <link rel="stylesheet" href="../eluza-global.css">
+  <style>
+    .skip-link { position: absolute; left: -9999px; top: 0; background: var(--elz-black); color: var(--elz-white); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); z-index: 200; }
+    .skip-link:focus { left: var(--space-4); top: var(--space-4); }
+    .elz-header__nav a[aria-current="page"] { color: var(--color-text-primary); font-weight: var(--weight-medium); }
+    .site-footer__group-title { font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--elz-dull); margin-bottom: var(--space-3); }
+    .site-footer__links a { display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0; }
+    .site-footer__links a:hover { color: var(--elz-white); }
+    .fc-list { list-style: none; margin-top: var(--space-4); }
+    .fc-list li { padding: var(--space-2) 0; padding-left: var(--space-5); position: relative; font-size: var(--text-lg); line-height: var(--leading-loose); color: var(--color-text-secondary); }
+    .fc-list li::before { content: ''; position: absolute; left: 0; top: 14px; width: 5px; height: 5px; border-radius: var(--radius-full); background: var(--elz-black); }
+    .form-block-title { font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin: var(--space-10) 0 var(--space-5); padding-bottom: var(--space-2); border-bottom: 1px solid var(--color-border); }
+    .check-group { display: flex; flex-direction: column; gap: var(--space-2); }
+    .check-option { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-lg); cursor: pointer; font-size: var(--text-md); color: var(--color-text-secondary); }
+    .check-option input { width: 16px; height: 16px; accent-color: var(--elz-black); flex-shrink: 0; }
+    .ack-box { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); margin-top: var(--space-6); }
+    .ack-box input[type="checkbox"] { margin-top: 5px; width: 16px; height: 16px; accent-color: var(--elz-black); flex-shrink: 0; }
+    .ack-box label { font-size: var(--text-md); line-height: var(--leading-loose); color: var(--color-text-secondary); cursor: pointer; }
+  </style>
+</head>
+<body style="font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-surface);">
+
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <!-- HEADER -->
+  <header class="elz-header">
+    <div class="elz-header__inner container">
+      <a href="index.html" aria-label="ELUZA — página inicial">
+        <div class="elz-header__logo">ELUZA</div>
+        <div class="elz-header__tagline">Private Travel Design Studio</div>
+      </a>
+      <nav class="elz-header__nav" aria-label="Navegação principal">
+        <a href="how-we-think.html">Como Pensamos</a>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="case-studies.html">Estudos de Caso</a>
+        <a href="before-you-book.html">Antes de Reservar</a>
+        <a href="about.html">Sobre</a>
+        <a href="get-started.html" class="btn btn--dark btn--sm">Comece Aqui</a>
+        <a href="../fit-call.html" aria-label="Mudar idioma" lang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- FC-01 — Objetivo -->
+  <section class="hero">
+    <div class="container container-narrow">
+      <div class="hero__eyebrow">Fit Call</div>
+      <h1 class="hero__title font-serif" style="font-size: var(--text-8xl);">Quando o melhor ponto de partida ainda não está claro.</h1>
+      <p class="hero__sub" style="max-width: var(--max-width-lg);">O Fit Call é uma conversa diagnóstica de 20 minutos para viagens que ainda não permitem uma decisão direta e responsável sobre o serviço.</p>
+      <p class="body-lg mt-4" style="max-width: var(--max-width-lg);">Entendemos em que ponto a viagem está, o que já foi fechado, o que continua indefinido e que nível de participação você espera. Depois, recomendamos o próximo passo mais adequado: Trip Design Blueprint, um trabalho de design mais profundo, outro caminho ou nenhum serviço por enquanto.</p>
+    </div>
+  </section>
+
+  <!-- FC-02 — Para quem é -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Use o Fit Call quando for preciso identificar o serviço adequado.</h2>
+      <p class="body-lg mt-4">Ele pode ser o melhor ponto de partida se:</p>
+      <ul class="fc-list">
+        <li>voos, hotéis ou outros compromissos importantes já estão fechados;</li>
+        <li>vários viajantes, núcleos familiares ou responsáveis pelas decisões precisam chegar a um acordo;</li>
+        <li>você espera participação nas reservas ou apoio além de um Blueprint independente;</li>
+        <li>a viagem envolve complexidade operacional ou emocional incomum;</li>
+        <li>você ainda não sabe se precisa de Blueprint, Full Design ou Signature Travel Architecture.</li>
+      </ul>
+      <p class="body-lg mt-6">Se a estrutura da viagem ainda está aberta e você já entende o Blueprint, pode começar por <a href="get-started.html" style="text-decoration: underline;">Comece Aqui</a> sem fazer um Fit Call.</p>
+    </div>
+  </section>
+
+  <!-- FC-03 — O que acontece -->
+  <section class="py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-lg font-serif">Vinte minutos para responder a uma pergunta.</h2>
+      <div class="grid grid-3 mt-8" style="gap: var(--space-4);">
+        <div class="card">
+          <h3 style="font-size: var(--text-xl); font-weight: var(--weight-medium); margin-bottom: var(--space-3);">Antes da conversa</h3>
+          <p class="body-md">Escolha um horário online e preencha um formulário curto. São cerca de cinco minutos para nos dar o contexto necessário.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: var(--text-xl); font-weight: var(--weight-medium); margin-bottom: var(--space-3);">Durante a conversa</h3>
+          <p class="body-md">Fazemos perguntas objetivas sobre a viagem, o estágio atual do planejamento, as decisões ainda abertas e o tipo de apoio esperado.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: var(--text-xl); font-weight: var(--weight-medium); margin-bottom: var(--space-3);">Ao final</h3>
+          <p class="body-md">Apresentamos uma recomendação clara e explicamos por que ela faz sentido para a situação. A recomendação não significa que um serviço foi aceito; escopo e condições comerciais são confirmados separadamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FC-04 — Limite (DARK) -->
+  <section class="section-dark py-16 px-6">
+    <div class="container container-narrow">
+      <h2 class="heading-xl font-serif">Um diagnóstico de serviço, não uma sessão de planejamento.</h2>
+      <p class="body-lg mt-6">A conversa não entrega uma rota, recomendações de hotéis, comparações de destinos, orientação de reservas ou uma estrutura pronta para usar. Esse trabalho pertence a um serviço com escopo definido.</p>
+      <p class="body-lg mt-4">O limite mantém a conversa útil. A pergunta não é como desenhar a viagem, mas se a ELUZA é o estúdio adequado, qual nível de participação é proporcional e se este é o momento certo para começar.</p>
+    </div>
+  </section>
+
+  <!-- FC-05 / FC-06 + formulário -->
+  <section class="section-subtle py-16 px-6">
+    <div class="container container-tight">
+      <div class="eyebrow">Antes do seu Fit Call</div>
+      <h2 class="heading-lg font-serif mt-3">Agende um Fit Call.</h2>
+      <p class="body-lg mt-4">Escolha um horário e preencha o formulário curto para confirmar a conversa.</p>
+      <p class="body-md mt-4">Este formulário curto oferece o contexto necessário para entendermos o estágio da viagem e aproveitarmos bem os 20 minutos. Você não precisa ter um plano pronto. Compartilhe o formato atual da viagem, o que já está fechado e o que permanece mais indefinido. Este não é um questionário de planejamento, e você não precisa descrever cada preferência ou cada dia.</p>
+      <p class="mt-3" style="font-size: var(--text-sm); color: var(--color-text-muted);"><strong>Tempo estimado:</strong> Cerca de 5 minutos. Respostas claras e objetivas são suficientes. O envio das respostas não significa que um horário foi marcado.</p>
+
+      <form>
+        <!-- Bloco 1 — Contato -->
+        <div class="form-block-title">Bloco 1 — Contato</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-nome">Nome</label>
+          <input id="fc-nome" type="text" class="input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-sobrenome">Sobrenome</label>
+          <input id="fc-sobrenome" type="text" class="input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-email">Email</label>
+          <input id="fc-email" type="email" class="input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-origem">Como você conheceu a ELUZA?</label>
+          <select id="fc-origem" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Indicação de amigo ou colega</option>
+            <option>Redes sociais</option>
+            <option>Busca na internet</option>
+            <option>LinkedIn</option>
+            <option>Email ou newsletter</option>
+            <option>Outro</option>
+          </select>
+          <div class="form-hint mt-2">Se Outro: conte um pouco mais.</div>
+        </div>
+
+        <!-- Bloco 2 — Estágio atual do planejamento -->
+        <div class="form-block-title">Bloco 2 — Estágio atual do planejamento</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-estagio">Em que ponto está o planejamento desta viagem?</label>
+          <select id="fc-estagio" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Tenho uma direção, mas nada está decidido.</option>
+            <option>Tenho um destino em mente, mas nada está reservado.</option>
+            <option>Já pesquisei bastante, mas nada está confirmado.</option>
+            <option>Reservei apenas os voos.</option>
+            <option>Reservei os voos e parte das hospedagens.</option>
+            <option>A maior parte da viagem já está reservada.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-pendente">Como a maior parte da viagem já está reservada, o que ainda precisa ser resolvido?</label>
+          <div class="form-hint">Indique as decisões que ainda estão genuinamente em aberto. Obrigatório apenas quando a maior parte da viagem já está reservada.</div>
+          <textarea id="fc-pendente" class="textarea"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">O que você já reservou?</label>
+          <div class="check-group">
+            <label class="check-option"><input type="checkbox"> Nada</label>
+            <label class="check-option"><input type="checkbox"> Voos internacionais</label>
+            <label class="check-option"><input type="checkbox"> Voos domésticos ou transporte interno</label>
+            <label class="check-option"><input type="checkbox"> Hospedagem principal</label>
+            <label class="check-option"><input type="checkbox"> Parte das hospedagens</label>
+            <label class="check-option"><input type="checkbox"> A maioria ou todas as hospedagens</label>
+            <label class="check-option"><input type="checkbox"> Experiências ou passeios específicos</label>
+            <label class="check-option"><input type="checkbox"> Transfers ou transporte terrestre</label>
+            <label class="check-option"><input type="checkbox"> Tudo está reservado</label>
+          </div>
+        </div>
+
+        <!-- Bloco 3 — Destino e datas -->
+        <div class="form-block-title">Bloco 3 — Destino e datas</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-destinos">Para onde você está pensando em viajar?</label>
+          <div class="form-hint">Inclua os destinos que você está considerando ativamente. Uma lista curta é suficiente.</div>
+          <textarea id="fc-destinos" class="textarea" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-destino-decidido">O destino já está decidido?</label>
+          <select id="fc-destino-decidido" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Sim</option>
+            <option>Reduzi para duas ou três opções</option>
+            <option>Ainda está em aberto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-quando">Quando você pretende viajar?</label>
+          <div class="form-hint">Mês e ano são suficientes se as datas exatas ainda não estiverem definidas.</div>
+          <input id="fc-quando" type="text" class="input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-flexibilidade">Qual é a flexibilidade das datas?</label>
+          <select id="fc-flexibilidade" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Fixas</option>
+            <option>Quase fixas, dentro de uma janela de duas ou três semanas</option>
+            <option>Flexíveis dentro de uma estação do ano</option>
+          </select>
+        </div>
+
+        <!-- Bloco 4 — Viajantes -->
+        <div class="form-block-title">Bloco 4 — Viajantes</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-viajantes">Quem vai viajar?</label>
+          <select id="fc-viajantes" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Uma pessoa</option>
+            <option>Casal</option>
+            <option>Três a cinco adultos</option>
+            <option>Família com crianças</option>
+            <option>Seis ou mais viajantes</option>
+            <option>Grupo multigeracional ou misto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-contexto">Há algum contexto prático sobre os viajantes que devemos conhecer antes da conversa?</label>
+          <div class="form-hint">Compartilhe apenas o que for relevante para avaliar o escopo — por exemplo, uma consideração de mobilidade ou uma configuração de viajantes que mude a complexidade da viagem. Não envie prontuários médicos ou diagnósticos.</div>
+          <textarea id="fc-contexto" class="textarea"></textarea>
+        </div>
+
+        <!-- Bloco 5 — Adequação comercial -->
+        <div class="form-block-title">Bloco 5 — Adequação comercial</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-orcamento">Qual orçamento de trabalho você considera para a viagem, sem incluir os voos internacionais?</label>
+          <div class="form-hint">Uma faixa é suficiente. Isso nos ajuda a avaliar escopo realista e contrapartidas.</div>
+          <select id="fc-orcamento" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Até US$ 6.000</option>
+            <option>US$ 6.000–US$ 12.000</option>
+            <option>US$ 12.000–US$ 25.000</option>
+            <option>Acima de US$ 25.000</option>
+            <option>Ainda não defini o orçamento</option>
+            <option>Prefiro conversar sobre isso durante o Fit Call</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-investimento">Você se sente confortável em investir em design profissional de viagens antes de fazer as reservas?</label>
+          <select id="fc-investimento" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Sim</option>
+            <option>Estou aberto, mas quero entender melhor</option>
+            <option>Não tenho certeza</option>
+            <option>Não, prefiro não pagar separadamente pelo planejamento</option>
+          </select>
+        </div>
+
+        <!-- Bloco 6 — Necessidade e adequação -->
+        <div class="form-block-title">Bloco 6 — Necessidade e adequação</div>
+        <div class="form-group">
+          <label class="form-label" for="fc-ocasiao">Esta viagem está ligada a alguma ocasião específica?</label>
+          <select id="fc-ocasiao" class="select">
+            <option value="">Selecione uma opção</option>
+            <option>Aniversário ou marco do relacionamento</option>
+            <option>Lua de mel ou viagem após o casamento</option>
+            <option>Viagem em família</option>
+            <option>Primeira grande viagem internacional</option>
+            <option>Viagem planejada há muito tempo</option>
+            <option>Negócios e lazer</option>
+            <option>Nenhuma ocasião específica</option>
+            <option>Outro</option>
+            <option>Prefiro não responder</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-indefinido">O que está mais indefinido na viagem neste momento?</label>
+          <div class="form-hint">Concentre-se na decisão ou incerteza que você quer que a conversa diagnostique. Algumas frases são suficientes.</div>
+          <textarea id="fc-indefinido" class="textarea" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Que tipo de ajuda você procura?</label>
+          <div class="check-group">
+            <label class="check-option"><input type="checkbox"> Rota e estrutura antes das reservas</label>
+            <label class="check-option"><input type="checkbox"> Direção sobre onde se hospedar</label>
+            <label class="check-option"><input type="checkbox"> Direção de experiências e restaurantes</label>
+            <label class="check-option"><input type="checkbox"> Participação ativa nas reservas</label>
+            <label class="check-option"><input type="checkbox"> Um documento de viagem claro para usar depois das reservas</label>
+            <label class="check-option"><input type="checkbox"> Suporte durante a viagem</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-prazo">Em quanto tempo você precisa ter a direção do planejamento definida?</label>
+          <select id="fc-prazo" class="select" required>
+            <option value="">Selecione uma opção</option>
+            <option>Daqui a mais de seis meses</option>
+            <option>Dentro de três a seis meses</option>
+            <option>Dentro de um a três meses</option>
+            <option>Dentro de quatro a seis semanas</option>
+            <option>Dentro de duas semanas</option>
+            <option>Imediatamente</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fc-mais">Há mais alguma informação que devemos conhecer antes da conversa?</label>
+          <div class="form-hint">Não envie dados de pagamento, informações de passaporte, prontuários médicos ou outras informações pessoais restritas.</div>
+          <textarea id="fc-mais" class="textarea"></textarea>
+        </div>
+
+        <!-- Privacidade e consentimento -->
+        <div class="ack-box">
+          <input type="checkbox" id="fc-consent" required>
+          <label for="fc-consent">Confirmo que li a <a href="privacy.html" style="text-decoration: underline;">Política de Privacidade</a> e autorizo o uso destas informações para análise do Fit Call.</label>
+        </div>
+        <p class="mt-3" style="font-size: var(--text-sm); color: var(--color-text-muted);">Ao continuar, você concorda com os <a href="terms.html" style="text-decoration: underline;">Termos</a> e reconhece a <a href="privacy.html" style="text-decoration: underline;">Política de Privacidade</a>. O envio do formulário não cria uma contratação nem confirma que a ELUZA aceitou a viagem.</p>
+
+        <div class="mt-8">
+          <button type="submit" class="btn btn--dark btn--lg w-full">Enviar respostas</button>
+        </div>
+        <p class="text-center mt-4" style="font-size: var(--text-md); color: var(--color-text-muted);">Já sabe que o Blueprint é o ponto de partida? <a href="get-started.html" style="color: var(--color-text-primary); text-decoration: underline;">Comece Aqui</a></p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="section-dark py-16 px-6" aria-label="Rodapé do site">
+    <div class="container">
+      <div class="grid grid-4" style="gap: var(--space-8); text-align: left;">
+        <div>
+          <div class="elz-header__logo" style="color: var(--elz-white);">ELUZA</div>
+          <div class="elz-header__tagline" style="color: var(--elz-dull);">Private Travel Design Studio</div>
+          <p class="mt-4" style="font-size: var(--text-md); color: var(--elz-dust);">Clareza para a viagem, antes dos primeiros compromissos.</p>
+          <p class="mt-3" style="font-size: var(--text-sm); color: var(--elz-dull);">Estúdio privado de design de viagens com sede em Nova York. Consultas com hora marcada e projetos conduzidos à distância nos Estados Unidos e em outros países.</p>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Explore a ELUZA">
+          <div class="site-footer__group-title">Explore</div>
+          <a href="how-we-think.html">Como Pensamos</a>
+          <a href="blueprint.html">Blueprint</a>
+          <a href="case-studies.html">Estudos de Caso</a>
+          <a href="before-you-book.html">Antes de Reservar</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Sobre o estúdio">
+          <div class="site-footer__group-title">Estúdio</div>
+          <a href="about.html">Sobre</a>
+          <a href="mailto:design@eluza.co" aria-label="Enviar email para a ELUZA">design@eluza.co</a>
+        </div>
+        <div class="site-footer__links" role="group" aria-label="Legal e idioma">
+          <div class="site-footer__group-title">Legal e idioma</div>
+          <a href="terms.html">Termos</a>
+          <a href="privacy.html">Privacidade</a>
+          <span style="display: block; font-size: var(--text-md); color: var(--elz-dust); padding: var(--space-1) 0;">PT-BR · <a href="../fit-call.html" style="display: inline; padding: 0; text-decoration: underline;" lang="en">EN</a></span>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--elz-shoe-wax); margin-top: var(--space-12); padding-top: var(--space-6);">
+        <span style="font-size: var(--text-sm); color: var(--elz-dull);">2024 ELUZA &copy;</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
